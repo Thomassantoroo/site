@@ -1,0 +1,132 @@
+<nav>
+    <ul>
+        <li><a href="index.html">Accueil</a></li>
+        <!-- Début du sous-menu déroulant -->
+        <li><a href="">Informations</a>
+            <ul>
+                <li><a href="profil.html">Profil</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </li>
+        <!-- Fin du sous-menu déroulant -->
+        <li><a href="projets.html">Projets</a>
+        </li>
+        <li><a href="colaborateurs.html">Colaborateurs</a></li>
+    </ul>
+</nav>
+<style>
+    li {
+        list-style:none !important; /*On enlève les puces de la liste */
+        color:#FFF;
+        padding:10px;
+        font-size:50px;
+        text-decoration:none;
+        width: 25%;
+    }
+
+    nav ul {
+        padding:0;
+        margin:0;
+    }
+
+    nav ul li {
+        list-style: none;
+        line-height:30px;
+        float:left;
+    }
+
+    nav ul li a {
+        color:#FFF;
+        padding:10px;
+        font-size:20px;
+        text-decoration:none;
+    }
+
+    li a:hover {
+        border-bottom:3px #FFF solid;
+    }
+
+    nav ul li ul {
+        display:none; /* Rend le menu déroulant caché par défaut */
+    }
+
+    nav ul li:hover ul { /* Affiche la dropNav au survol de la souris avec la class .drop */
+        z-index:99999;
+        display:list-item !important;
+        position:absolute;
+        margin-top:5px;
+        margin-left:-10px;
+    }
+
+    nav ul li:hover ul li {
+        float:none;
+    }
+</style>
+
+
+
+<div id="wrapper">
+    <h1>
+        <span class="letter01">B</span>
+        <span class="letter02">i</span>
+        <span class="letter03">e</span>
+        <span class="letter04">n</span>
+        <span class="letter05">v</span>
+        <span class="letter06">e</span>
+        <span class="letter06">n</span>
+        <span class="letter07">u</span>
+        <span class="letter07">e</span>
+        <span class="letter08">&nbsp;</span>
+        <span class="letter06">s</span>
+        <span class="letter06">u</span>
+        <span class="letter06">r</span>
+        <span class="letter08">&nbsp;</span>
+        <span class="letter06">m</span>
+        <span class="letter06">o</span>
+        <span class="letter06">n</span>
+        <span class="letter08">&nbsp;</span>
+        <span class="letter09">p</span>
+        <span class="letter10">o</span>
+        <span class="letter11">r</span>
+        <span class="letter12">t</span>
+        <span class="letter13">f</span>
+        <span class="letter14">o</span>
+        <span class="letter15">l</span>
+        <span class="letter16">i</span>
+        <span class="letter16">o</span>
+    </h1>
+    <h2>
+        Thomas Santoro
+    </h2>
+  </div>
+
+<style>
+/* Styles généraux */
+* {margin:0; padding:0; font-size:1em; box-sizing:border-box;}
+body {transition:background-color 4s ease; background:linear-gradient(70deg,purple,rgb(77, 0, 128),rgb(7, 147, 228),rgb(77, 0, 128),purple); background-size:auto; background-size:500% 250%; animation:degradeFond 10s ease infinite;}
+@keyframes degradeFond {
+  0% {background-position:0 50%;}
+  50% {background-position:50% 50%;}
+  100% {background-position:0 50%;}
+}
+
+/* Réglages du bloc de texte général */
+#wrapper {text-align:center; font-family:'Dancing Script', cursive;}
+#wrapper h1 {margin-top:40vh; white-space:normal; display:inline-block; font-size:5em; font-weight:300; background:linear-gradient(75deg, #E5E0F9,#C5C7DB,#EAEDF3,#C5D2DB,#E0F6F9); color:transparent; background-clip:text; -webkit-background-clip:text; position:relative;}
+#wrapper h2 { white-space:normal; display:inline-block; font-size:5em; font-weight:300; background:linear-gradient(75deg, #E5E0F9,#C5C7DB,#EAEDF3,#C5D2DB,#E0F6F9); color:transparent; background-clip:text; -webkit-background-clip:text; position:relative;}
+
+/* Animations des lettres */
+
+h1::after {content:""; display:block; background:linear-gradient(45deg, #F9CFF3,#D4B6DB,#E5D6F2,#C0B6DB,#CFCFF9); height:3px; width:0%; opacity:0; margin-top:.2em; animation:lineWidth 10s ease-in-out forwards;}
+@keyframes lineWidth {
+  0% {width:0%; opacity:0;}
+  100% {width:100%; opacity:1.0;}
+}
+
+#wrapper {animation:textAnimated 60s ease infinite;}
+@keyframes textAnimated {
+  0% {background:linear-gradient(70deg,#FDD9CD,#E3BCB8,#FAD6DB,#E3B8D3,#F9CDFD); background-position:-12em 0; background-clip:text; -webkit-background-clip:text; color:transparent;}
+  50% {background:linear-gradient(85deg,#FDD9CD,#E3BCB8,#FAD6DB,#E3B8D3,#F9CDFD); background-position:0 0; background-clip:text; -webkit-background-clip:text; color:transparent;}
+  100% {background:linear-gradient(70deg,#FDD9CD,#E3BCB8,#FAD6DB,#E3B8D3,#F9CDFD); background-position:-12em; background-clip:text; -webkit-background-clip:text; color:transparent;}
+}
+</style>
